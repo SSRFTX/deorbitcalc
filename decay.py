@@ -44,3 +44,6 @@ if __name__ == "__main__":
     print(f"Deorbit lifetime:  {result['lifetime_years']:.2f} years")
     print(f"Final altitude:  {result['altitudes'][-1]:.1f} km")
     print(f"Data points:  {len(result['altitudes'])}")
+    result2 = simulate_decay(altitude_km=600, Cd=2.2, A_eff=10.0, mass=150)
+    print(f"\n600 km test:")
+    print(f"Deorbit lifetime: {result2['lifetime_years']:.2f} years")
